@@ -1,0 +1,51 @@
+.main-card {
+    width: 40%;
+    height: 50vh;
+}
+.img-fluid {
+    /* width: auto; */
+    height: 100%;
+    object-fit: cover;
+    /* cursor: pointer; */
+}
+.fila {
+    position: relative;
+}
+.slider {
+    height: 30vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+}
+/* .slider::-webkit-scrollbar {
+    display: none;
+} */
+.slider__card {
+    max-height: 100%;
+    /* width: 25%; */
+    min-width: 25%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 1s;
+}
+.slider__card:hover {
+    transform: scale(1);transform:  scale(1.2);
+}
+.arrow {
+    width: 4vw;
+    height: 30vh;
+    position: absolute;
+    z-index: 10;
+    margin: 0 -15px;
+    background-color: #222;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: .9;
+    max-width: 100%;
+}
+.arrow-right {
+    right: 0;
+}
