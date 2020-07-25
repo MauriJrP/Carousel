@@ -1,51 +1,63 @@
+/* -------- ------- ------ ----- All ----- ------ ------- -------- */
+/* body {
+} */
+.container {
+  overflow: hidden;
+}
+/* -------- ------- ------ ----- Main ----- ------ ------- -------- */
 .main-card {
-    width: 40%;
-    height: 50vh;
+  width: 40%;
+  height: 50vh;
 }
 .img-fluid {
-    /* width: auto; */
-    height: 100%;
-    object-fit: cover;
-    /* cursor: pointer; */
+  /* width: auto; */
+  height: 100%;
+  object-fit: cover;
+  /* cursor: pointer; */
 }
+/* -------- ------- ------ ----- Slider ----- ------ ------- -------- */
 .fila {
-    position: relative;
+  position: relative;
+  padding: 20px 0;
+  overflow: hidden;
 }
 .slider {
-    height: 30vh;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    display: flex;
+  height: 30vh;
+  display: flex;
+  scroll-behavior: smooth;
 }
-/* .slider::-webkit-scrollbar {
-    display: none;
-} */
+.slider::-webkit-scrollbar {
+  display: none;
+}
 .slider__card {
-    max-height: 100%;
-    /* width: 25%; */
-    min-width: 25%;
-    object-fit: cover;
-    overflow: hidden;
-    transition: 1s;
+  max-height: 100%;
+  /* width: 25%; */
+  overflow: hidden;
+  min-width: 25%;
+  object-fit: cover;
+  transition: 1s;
 }
 .slider__card:hover {
-    transform: scale(1);transform:  scale(1.2);
+  /* transform: scale(1); */
+  transform: scale(1.2);
 }
 .arrow {
-    width: 4vw;
-    height: 30vh;
-    position: absolute;
-    z-index: 10;
-    margin: 0 -15px;
-    background-color: #222;
-    font-size: 4em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    opacity: .9;
-    max-width: 100%;
+  width: 3vw;
+  height: 60%;
+  position: absolute;
+  z-index: 10;
+  top: 20%;
+  background-color: #222;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.9;
+  max-width: 100%;
+  color: white;
 }
 .arrow-right {
-    right: 0;
+  right: 0;
 }
+-------- ------- ------ -----  ----- ------ ------- --------
